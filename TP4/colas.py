@@ -8,15 +8,27 @@ class colas(list):
             self.elementos = [elemento] + self.elementos
     
     def __len__(self):
+        """
+        Cuantos elementos quedan en la cola
+        """
         return len(self.elementos)
 
     def __getitem__(self, key):
+        """
+        Sobrecarga de operadores []
+        """
         return self.elementos[key]
 
     def __add__(self, otra):
+        """
+        Como se suman dos colas
+        """
         self.elementos = otra.elementos + self.elementos
     
     def __str__(self):
+        """
+        Como se imprime una cola
+        """
         cadena = ""
         for elemento in self.elementos[::-1]:
             cadena = cadena + ", " + str(elemento)
