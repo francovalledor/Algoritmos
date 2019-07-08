@@ -23,7 +23,9 @@ class colas(list):
         """
         Como se suman dos colas
         """
-        self.elementos = otra.elementos + self.elementos
+        nueva_cola = colas()
+        nueva_cola.elementos = otra.elementos + self.elementos 
+        return nueva_cola
     
     def __str__(self):
         """
@@ -65,7 +67,6 @@ def obtener(cola):
     """
     Devuelve el primer elemento de la cola
     """
-    es_tipo_colas(cola)
     es_tipo_colas(cola)
     elemento = cola.elementos[-1]
     del cola.elementos[-1]
