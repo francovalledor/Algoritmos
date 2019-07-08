@@ -1,0 +1,128 @@
+Guía de ejercicios prácticos
+Resolver los siguientes ejercicios utilizando las funciones definidas en el TDA cola.
+1. Eliminar de una cola de caracteres todas las vocales que aparecen.
+
+2. Utilizando operaciones de cola y pila, invertir el contenido de una cola.
+
+3. Dada una secuencia de caracteres utilizando operaciones de cola y pila determinar si es un
+palíndromo.
+
+4. Dada una cola de números cargados aleatoriamente, eliminar de ella todos los que no sean
+primos.
+
+5. Utilizando operaciones de cola y pila, invertir el contenido de una pila.
+
+6. Contar la cantidad de ocurrencias de un determinado elemento en una cola, sin utilizar
+ninguna estructura auxiliar.
+
+7. Eliminar el i-ésimo elemento después del frente de la cola.
+
+8. Realizar un algoritmo que mantenga ordenado los elementos agregados a una cola,
+utilizando solo una cola como estructura auxiliar.
+
+9. Dada una cola de valores enteros calcular su rango y contar cuántos elementos negativos
+hay.
+
+10. Realizar un algoritmo que ingrese en una cola los dos valores iniciales de la sucesión de
+Fibonacci (o condiciones de fin de forma recursiva) y a partir de estos calcule los siguientes
+valores de dicha sucesión, hasta obtener el valor en dicha sucesión correspondiente a un
+número n ingresado por el usuario. Solo puede utilizar una cola auxiliar como estructura
+extra.
+
+11. Dada dos colas con valores ordenadas, realizar un algoritmo que permita combinar en una
+nueva cola los valores de las otras dos manteniendo los valores ordenados, sin utilizar
+ninguna estructura auxiliar, ni métodos de ordenamiento.
+
+12. Dada una cola de 15000 caracteres generados aleatoriamente realizar las siguientes
+actividades:
+a. Separarla en dos colas una con dígitos y otra con el resto de los caracteres.
+b. Determinar cuántas letras hay en la segunda cola.
+
+13. Realizar un algoritmo que permita realizar las siguientes funciones:
+a. Cargar semáforos de una rotonda y sus respectivos tiempos de funcionamiento.
+b. Simular el funcionamiento de los semáforos cargados (cola circular).
+
+14. Dada dos colas con valores enteros numéricos determinar:
+2
+a. Si tienen la misma cantidad de elementos.
+b. Si ambas colas son iguales.
+c. Cual de las dos es mayor (respecto a la sumatoria de sus elementos).
+d. Cual tiene más números primos.
+e. Si ambas colas poseen al menos un número múltiplo de dos y un número múltiplo
+de tres.
+
+15. Utilice cola de prioridad para tratar la atención de una cola de impresora tomando el
+siguiente criterio (1 - empleados, 2 - gerente), y resuelva la siguiente situación:
+a. Cargue tres documentos de empleados (un documento solamente lo representamos
+con un nombre).
+b. Imprima el primer documento de la cola (mostrar nombre).
+c. Cargue un documento del gerente.
+d. Imprima los dos primeros documentos de la cola.
+e. Cargue dos documentos de empleados y uno de gerente.
+f. Imprima todos los documentos de la cola de impresión.
+
+16. Desarrollar un algoritmo que permita cargar los procesos (id_proceso, tiempo_ejecucion) a
+la cola de ejecución de un procesador y resuelva las siguientes situaciones:
+a. Simular la atención de los proceso de la cola transcurriendo su tiempo [utilizando la
+función time.sleep (segundos)] hasta que se vacíe la cola.
+b. Considerar que el quantum de tiempo asignado por el procesador a cada proceso es
+de máximo 4.5 segundos (si el proceso no terminó su ejecución deberá volver a la
+cola con el tiempo restante, para terminar su ejecución).
+c. Cuando se realiza el cambio de proceso (por finalización de ejecución o porque se le
+agotó el quantum de tiempo) se pueden ingresar nuevos procesos a la cola por el
+usuario.
+d. No se aplican criterios de prioridad.
+
+17. Dada una cola con los códigos de turnos de atención (con el formato #@@@, donde # es
+una letra de la A a la F y @@@ son tres dígitos desde el 000 al 999), desarrollar un algoritmo
+que resuelva las siguientes situaciones:
+a. Cargue 1000 turnos de manera aleatoria a la cola.
+b. Separe la cola con datos en dos colas, cola_1 con los turnos que empiezan con A, C y
+F, y la cola_2 con el resto de los turnos (B, D y E).
+c. Determine cuál de las colas tiene mayor cantidad de turnos, y de esta cuál de las
+letras tiene mayor cantidad.
+3
+
+18. Modificar las funciones de arribo y atención del TDA_cola para adaptarlo a una cola circular,
+que no necesite la función mover al final; y desarrolle un función que permita realizar un
+barrido de dicha estructura respetando el principio de funcionamiento de la cola.
+
+19. Dada una cola_buff_out que será utilizada como buffer de transferencia para enviar una
+trama de a dos bytes de una cadena de caracteres, desarrollar un algoritmo que resuelva las
+siguientes actividades:
+a. A partir de una cadena ingresada por el usuario cargarla a la cola para su
+transferencia, considerando que solo se pueden enviar dos bytes a la vez (es decir
+deberá convertir los caracteres a bytes).
+b. Enviar la trama completa a otra cola_buff_in que será encargada de la recepción y
+almacenamiento de la trama.
+c. Decodificar la trama de bytes recibida y convertirla a cadena de caracteres para
+poder mostrarla por pantalla.
+
+20. Desarrollar un algoritmo para el control de un puesto de peaje (que posee 3 cabinas de
+cobro), que resuelva las siguientes actividades:
+a. Agregar 30 autos de manera aleatoria a las cabinas de cobro.
+b. Realizar la atención de las cabinas.
+c. Determinar qué cabina recaudó mayor cantidad de pesos ($).
+
+21. Desarrollar un algoritmo que permita administrar los despegues y aterrizajes de un
+aeropuerto con 3 pistas, contemplando las siguientes actividades:
+a. De cada vuelo se conoce el nombre de la empresa, hora salida, hora llegada,
+aeropuerto de origen, aeropuerto de destino y tipo (pasajeros, negocios, carga).
+b. Utilizar una cola para administrar los despegues (se cargan ordenadas por horario de
+salida) y otras para los aterrizajes.
+c. En cada pista solo puede haber una avión realizando una maniobra de aterrizaje o
+despegue.
+d. Se debe permitir vuelos en tanto de aterrizaje como de despegue en ambas colas
+después de realizar una atención.
+e. Se debe atender siempre que se pueda a los elementos de la cola de aterrizaje (dado
+que son aviones que están en la zona de espera), salvo que sea el horario de salida
+del primer avión de la cola de despegue (donde se deberá atender dicho despegue).
+f. Cada tipo de avión tiene su tiempo de uso de la pista para despegue y aterrizaje
+(adaptados a segundo para los fines prácticos del ejercicio):
+i. Pasajeros (aterrizaje = 10 seg, despegue = 5)
+4
+ii. Negocios (aterrizaje = 5 seg, despegue = 3)
+iii. Carga (aterrizaje = 7 seg, despegue = 9)
+g. Se debe poder cancelar vuelos de despegue y poder reprogramar un vuelo para más
+tarde cuando se lo atiende para despegar (en esta caso el horario de salida será
+mayor que el último de la cola).
